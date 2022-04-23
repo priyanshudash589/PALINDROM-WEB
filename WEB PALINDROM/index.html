@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Palindrom Checker</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <center><strong>PALINDROM CHECKER</strong></center>
+      </h1>
+    </header>
+
+    <!-- <div class="cse"></div>    div.cse  -->
+
+    <!-- <div id="reg"></div>  div#reg -->
+
+    <!-- <div id="reg" class="cse"></div>    div#reg.cse -->
+
+    <div class="details">
+      <pre>
+    <strong class="mc"> What is a palindrome, and what does it mean?</strong>
+    <br>
+A palindrome is a word, sentence, verse, or even number that reads the same backward or forward. 
+It derives from Greek roots that literally mean “running back” (palin is “again, back,” and dromos, “running.”)
+ The word appears to have been created in English based on these roots in the early 1600s.
+
+Words like hippodrome or velodrome also feature the Greek dromos.
+
+So, a palindrome is like a word, phrase, or number that “runs back” on itself.
+ This bit of wordplay is not the same thing as when you rearrange the letters of a word
+  or phrase to spell another one. That’s called an anagram.
+
+In palindromes, spacing, punctuation, and capitalization are usually ignored.
+<br>
+
+<strong class="mc">What are some examples of palindromes?</strong>
+<br>
+We use palindromes everyday without thinking about it. Common palindromic—that’s
+ the adjective for palindrome—words include: noon, civic, racecar, level, and mom.
+</pre
+      >
+    </div>
+<br>
+<br>
+
+    <div class="input">
+      <center>
+        <p>Enter Number or a word to check wether it is palindrom or not:</p>
+        <input type="text" name="Input Text" id="tt" />
+        <button onclick="PalindromCheck()">Check</button>
+      </center>
+    </div>
+<br>
+<br>
+    <center><p id="out"></p></center>
+    
+    <center><img src="/istockphoto-1282209874-612x612.jpg" alt="" height="200px" width="480px"></center>
+    <script>
+      function PalindromCheck() {
+        var text = document.getElementById("tt").value;
+        console.log(text);
+        l = text.length;
+        var ist = "";
+        for (i = l - 1; i >= 0; i--) {
+          ist += text[i];
+        }
+        console.log(ist);
+        if (text == ist) {
+          document.getElementById("out").innerHTML = "This is a Palindrom";
+          console.log("in if");
+        } else {
+          document.getElementById("out").innerHTML = "This is not a Palindrom";
+          console.log("in else");
+        }
+      }
+    </script>
+  </body>
+</html>

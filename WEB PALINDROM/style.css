@@ -1,0 +1,17 @@
+
+header{
+    background-color: #F9FFA4;
+    color:#FF6363;
+    width:auto;
+}
+pre{text-align: center;
+    color: #5584AC;
+}
+body{
+    
+    background-image:linear-gradient( #d9f3c8 , rgb(236, 236, 236),rgb(236, 236, 236));
+}
+
+.mc{
+    color: #5534A5;
+}
